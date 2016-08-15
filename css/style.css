@@ -1,21 +1,151 @@
 body {
-	font-size: 14px; 
+  width: 1200px;
+	font-size: 14px;
 	line-height: 26px;
 	color: #333333;
 	font-weight: normal;
-	font-family: PT Sans;	
+	font-family: PT Sans;
 }
 
 h2 {
-	font-size: 21px; 
+	font-size: 21px;
 	line-height:26px;
 	color: #000000;
 	font-weight: bold;
 }
 
 h3 {
-	font-size: 21px; 
+	font-size: 21px;
 	line-height:21px;
 	color: #000000;
 	font-weight: bold;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  width: 1200px;
+  height: 56px;
+
+}
+
+.main-navigation {
+  width: 1056px;
+  height: 56px;
+}
+
+.pucture {
+  width: 1200px;
+  height: 508px;
+}
+
+.slogan {
+  width: 446px;
+  height: 216px;
+  background-color: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+.index-content-left {
+  float: left;
+  width: 400px;
+  height: 256px;
+  background-color: #81b3d2;
+}
+
+.index-content-right {
+  float: left;
+  width: 800px;
+  height: 256px;
+}
+
+.house {
+  float: left;
+  width: 400px;
+  height: 270px;
+  padding-top: 60px;
+
+}
+
+.food {
+  float: left;
+  width: 400px;
+  height: 270px;
+  padding-top: 60px;
+}
+
+.souvenirs {
+  float: left;
+  width: 400px;
+  height: 270px;
+  padding-top: 60px;
+}
+
+.area,.road,.tourist {
+  float: left;
+  width: 400px;
+  height: 206px;
+  padding-top: 50px;
+  background: #eeeeee;
+}
+
+.question {
+  width: 1200px;
+  height: 291px;
+}
+
+.map {
+  width: 1200px;
+  height: 593px;
+}
+
+.hashtag {
+  float: left;
+  width: 240px;
+  height: 120px;
+  margin-left: 73px;
+}
+
+.footer-social {
+  float: left;
+  width: 400;
+  height: 120px;
+  margin-right: 88px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 240px;
+  height: 120px;
+}
+
+/*Внутренная страница*/
+.infrastructure {
+  float: left;
+  width: 240px;
+  height: 217px;
+}
+
+.type-house {
+  float: left;
+  width: 240px;
+  height: 217px;
+}
+
+.price {
+  float: left;
+  width: 330px;
+  height: 217px;
+}
+
+.hotel {
+  width: 530px;
+  height: 150px;
 }
