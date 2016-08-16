@@ -29,13 +29,14 @@ h3 {
 
 .header {
   width: 1200px;
-  height: 56px;
+  padding: 22px 73px;
+
 
 }
 
 .main-navigation {
   width: 1056px;
-  height: 56px;
+
 }
 
 .pucture {
@@ -45,60 +46,89 @@ h3 {
 
 .slogan {
   width: 446px;
-  height: 216px;
-  background-color: yellow;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 65px;
-  padding-right: 65px;
+
+}
+
+.index-content {
+
 }
 
 .index-content-left {
   float: left;
-  width: 400px;
-  height: 256px;
-  background-color: #81b3d2;
+
 }
 
 .index-content-right {
   float: left;
-  width: 800px;
-  height: 256px;
+  background-color: #81b3d2;
+
 }
 
+.features-name {
+  padding-top: 60px;
+  padding-left: 73px;
+}
 .house {
   float: left;
-  width: 400px;
-  height: 270px;
-  padding-top: 60px;
+  width: 370px;
+
 
 }
 
 .food {
   float: left;
-  width: 400px;
-  height: 270px;
-  padding-top: 60px;
+  width: 370px;
+
 }
 
 .souvenirs {
   float: left;
+  width: 370px;
+
+}
+
+.area {
+  float: left;
   width: 400px;
-  height: 270px;
-  padding-top: 60px;
+  padding-right: 10px;
+  background: #eeeeee;
+}
+
+.road {
+  float: left;
+  width: 400px;
+  padding-right: 10px;
+  background: #eeeeee;
 }
 
 .area,.road,.tourist {
   float: left;
   width: 400px;
-  height: 206px;
-  padding-top: 50px;
   background: #eeeeee;
 }
 
+}
+
 .question {
-  width: 1200px;
-  height: 291px;
+  padding-left: 316px;
+  padding-right: 316px;
+  padding-top: 58px;
+  padding-bottom: 52px;
+}
+
+.question-title {
+  width: 568px;
+
+}
+
+.search-hotel {
+
+}
+
+.form {
+  width: 568px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .map {
@@ -106,46 +136,85 @@ h3 {
   height: 593px;
 }
 
+.main-footer {
+  padding-left: 73px;
+  padding-right: 73px;
+}
+
 .hashtag {
-  float: left;
+  display: inline-block;
   width: 240px;
-  height: 120px;
-  margin-left: 73px;
+  margin-left: 88px;
 }
 
 .footer-social {
-  float: left;
+  display: inline-block;
   width: 400;
-  height: 120px;
   margin-right: 88px;
 }
 
 .footer-copyright {
-  float: right;
+  display: inline-block;
   width: 240px;
-  height: 120px;
 }
 
 /*Внутренная страница*/
+.filter{
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 30px;
+  padding-bottom: 33px;
+}
 .infrastructure {
   float: left;
   width: 240px;
-  height: 217px;
+
 }
 
 .type-house {
   float: left;
   width: 240px;
-  height: 217px;
+
 }
 
 .price {
   float: left;
-  width: 330px;
-  height: 217px;
+  width: 328px;
+
+}
+
+.search-result {
+
 }
 
 .hotel {
   width: 530px;
-  height: 150px;
+  padding-left: 73px;
+  padding-right:  73px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+
+}
+
+.hotel-image {
+  width: 135px;
+  margin-left: 30px;
+}
+.hotel-title {
+  width: 258px;
+
+}
+
+.info {
+  width: 110px;
+  margin-right: 6px;
+}
+
+.cost {
+  width: 142px;
+  margin-right: 393px;
+}
+
+.rating {
+  width: 241px;
 }
