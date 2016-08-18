@@ -27,11 +27,15 @@ h3 {
   clear: both;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .header {
   width: 1200px;
-  padding: 22px 73px;
-
-
+  margin: 0 auto;
+  padding: 0 73px;
 }
 
 .main-navigation {
@@ -39,101 +43,83 @@ h3 {
 
 }
 
+.main-navigation ul {
+
+}
+
+.main-navigation li {
+  display: inline-block;
+}
+
 .pucture {
   width: 1200px;
-  height: 508px;
+  min-height: 508px;
 }
 
 .slogan {
-  width: 446px;
-
+  width: 576px;
+  margin: 0 312px;
+  padding-top: 60px;
+  padding-bottom: 55px;
 }
 
-.index-content {
-
-}
-
-.index-content-left {
+.index-content-text {
   float: left;
-
-}
-
-.index-content-right {
-  float: left;
+  width: 290px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 58px;
+  padding-bottom: 33px;
   background-color: #81b3d2;
+}
 
+.index-content-pick {
+  float: left;
+
+}
+
+.features-image {
+  float: left;
+  width: 400px;
+  padding-top: 60px;
+  padding-bottom: 86px;
 }
 
 .features-name {
-  padding-top: 60px;
-  padding-left: 73px;
-}
-.house {
-  float: left;
-  width: 370px;
-
-
-}
-
-.food {
-  float: left;
-  width: 370px;
-
-}
-
-.souvenirs {
-  float: left;
-  width: 370px;
-
-}
-
-.area {
   float: left;
   width: 400px;
-  padding-right: 10px;
+  padding-top: 50px;
+  padding-bottom: 40px;
   background: #eeeeee;
-}
-
-.road {
-  float: left;
-  width: 400px;
-  padding-right: 10px;
-  background: #eeeeee;
-}
-
-.tourists {
-  float: left;
-  width: 400px;
-  background: #eeeeee;
-}
 
 }
 
 .question {
-  padding-left: 316px;
-  padding-right: 316px;
   padding-top: 58px;
   padding-bottom: 52px;
 }
 
 .question-title {
-  width: 568px;
-
+  width: 576px;
+  margin: 0 312px;
 }
 
-.search-hotel {
-
+.search-hotel-title {
+  width: 568px;
+  margin: 0 312px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  background-color: #766357;
 }
 
 .form {
   width: 568px;
-  padding-left: 55px;
-  padding-right: 55px;
+  margin: 0 312px;
 }
 
 .map {
   width: 1200px;
-  height: 593px;
+  min-height: 593px;
 }
 
 .main-footer {
@@ -144,7 +130,8 @@ h3 {
 .hashtag {
   display: inline-block;
   width: 240px;
-  margin-left: 88px;
+  margin-left: 73px;
+  margin-right: 88px;
 }
 
 .footer-social {
@@ -155,66 +142,82 @@ h3 {
 
 .footer-copyright {
   display: inline-block;
-  width: 240px;
+  width: 241px;
 }
 
-/*Внутренная страница*/
-.filter{
-  padding-left: 73px;
-  padding-right: 73px;
-  padding-top: 30px;
-  padding-bottom: 33px;
+/*Внутренняя*/
+.filter input {
+  display: block;
+
 }
 .infrastructure {
   float: left;
-  width: 240px;
+  width: 241px;
 
 }
 
 .type-house {
   float: left;
-  width: 240px;
+  width: 288px;
 
 }
 
 .price {
-  float: left;
+  float: right;
   width: 328px;
 
 }
 
-.search-result {
-
+.find {
+  width: 1056px;
+  margin: 0 73px;
+  padding: 30px 0;
 }
 
+.find h2 {
+  display: inline-block;
+}
+
+.find p {
+  display: inline-block;
+}
 .hotel {
-  width: 530px;
-  padding-left: 73px;
-  padding-right:  73px;
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding: 31px 73px;
 
 }
 
 .hotel-image {
+  float: left;
   width: 135px;
-  margin-left: 30px;
+  margin-right: 30px;
 }
+
+.hotel-info {
+  float: left;
+  width:;
+  border: 1px solid blue;
+}
+
 .hotel-title {
   width: 258px;
+  border: 1px solid red;
 
 }
 
-.info {
+.hotel-type {
+  float: left;
   width: 110px;
   margin-right: 6px;
 }
 
 .cost {
+  float: left;
   width: 142px;
   margin-right: 393px;
 }
 
 .rating {
+  float: right;
   width: 241px;
+  border: 1px solid green;
 }
