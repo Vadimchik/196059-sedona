@@ -9,14 +9,14 @@ body {
 
 h2 {
 	font-size: 21px;
-	line-height:26px;
+	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
 }
 
 h3 {
 	font-size: 21px;
-	line-height:21px;
+	line-height: 21px;
 	color: #000000;
 	font-weight: bold;
 }
@@ -28,12 +28,10 @@ h3 {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
 }
 
-.header {
-  width: 1200px;
+.main-header {
   margin: 0 auto;
   padding: 0 73px;
 }
@@ -52,7 +50,6 @@ h3 {
 }
 
 .pucture {
-  width: 1200px;
   min-height: 508px;
 }
 
@@ -118,7 +115,6 @@ h3 {
 }
 
 .map {
-  width: 1200px;
   min-height: 593px;
 }
 
@@ -183,7 +179,6 @@ h3 {
 }
 .hotel {
   padding: 31px 73px;
-
 }
 
 .hotel-image {
@@ -194,30 +189,31 @@ h3 {
 
 .hotel-info {
   float: left;
-  width:;
-  border: 1px solid blue;
 }
 
-.hotel-title {
-  width: 258px;
-  border: 1px solid red;
-
+.hotel-title h2 {
+  margin: 0;
 }
 
 .hotel-type {
   float: left;
-  width: 110px;
   margin-right: 6px;
+}
+
+.hotel-type p {
+  margin: 0;
 }
 
 .cost {
   float: left;
-  width: 142px;
-  margin-right: 393px;
+}
+
+.cost p {
+  margin: 0;
 }
 
 .rating {
   float: right;
   width: 241px;
-  border: 1px solid green;
+  border: 1px solid black;
 }
