@@ -5,28 +5,28 @@
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="container">
     <header class="main-header">
-      <div class="header">
-  	    <nav class="main-navigation">
-  	      <ul>
-  	        <li>
-  	          <a href="#">Информация</a>
-  	        </li>
-  	        <li>
-  	      	  <a href="#">Фото и видео</a>
-  	        </li>
-  	        <li>
-  	      	  <a href="#">Карта штата</a>
-  	        </li>
-  	        <li>
-  	      	  <a href="#">Гостиницы</a>
-  	        </li>
-  	      </ul>
-        </nav>
-        <div class="index-logo">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="index-logo">
+        <a href="#">
           <img src="img/logo.png" width="#" height="#" alt="City of Sedona">
-        </div>
+         </a>
       </div>
     </header>
     <main class="content">
@@ -34,64 +34,67 @@
         <img src="img/Welcome.jpg" width="#" height="#" alt="Welcome Sedona">
       </div>
 	  <div class="features">
-	    <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-	    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-
-	    <div class="index-content">
-	      <div class="index-content-right">
+      <div class="slogan">
+	      <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+	      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+	    <div class="index-content clearfix">
+	      <div class="index-content-text">
 	        <h2>Настоящий городок</h2>
 	        <p>-№1-</p>
 	        <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
 	      </div>
-	      <div class="index-content-left">
+	      <div class="index-content-pick">
 	        <img src="img/city.jpg" width="#" height="#" alt="Вид на город">
 	      </div>
-	    <div class="features-name">
-	      <div class="house">
+      </div>
+	    <div class="features-item clearfix">
+	      <div class="features-image">
           <img src="img/house.png" width="#" height="#" alt="House">
 	        <h3>Жилье</h3>
 	        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 	      </div>
-	      <div class="food">
+	      <div class="features-image">
           <img src="img/food.png" width="#" height="#" alt="Food">
 	        <h3>Еда</h3>
 	        <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
 	      </div>
-	      <div class="souvenirs">
+	      <div class="features-image">
           <img src="img/gift.png" width="#" height="#" alt="Gift">
 	        <h3>Сувениры</h3>
 	        <p>Не только китайского, но и местного производства!</p>
 	      </div>
 	    </div>
-	    <div class="index-content">
-	      <div class="index-content-right">
+	    <div class="index-content clearfix">
+	      <div class="index-content-pick">
 	        <img src="img/devil's bridge.jpg" width="#" height="#" alt="Мост дъявола">
 	      </div>
-	      <div class="index-content-left">
+	      <div class="index-content-text">
 	        <h2>Там есть мост дъявола</h2>
 	        <p>-№2-</p>
 	        <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+        </div>
 	    </div>
-	    <div class="features-name">
-	      <div class="area">
+	    <div class="features-item clearfix">
+	      <div class="features-name">
 	        <h3>Небольшая площадь</h3>
 	        <p>-№3-</p>
 	        <p>Все достопримечательности находятся очень близко</p>
 	      </div>
-	      <div class="road">
+	      <div class="features-name">
 	        <h3>Красивая дорога</h3>
 	        <p>-№4-</p>
 	        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 	      </div>
-	      <div class="tourist">
+	      <div class="features-name">
 	        <h3>Мало туристов</h3>
 	        <p>-№5-</p>
 	        <p>Большинство едет в Гранд Каньон и толпится там</p>
 	      </div>
-		</div>
+		  </div>
 	  </div>
-	  <div class="container">
-	    <div class="question">
+	  <div class="question">
+	    <div class="question-title">
 	       <h2>Заинтерисовались?</h2>
 	       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 	    </div>
@@ -114,25 +117,27 @@
 	      </div>
 	      <div class="map">
         <!--Карта-->
-	        <footer class="main-footer">
-		      <div class="hashtag">
-		        <p>#Visitsedona</p>
-		      </div>
-		      <div class="footer-social">
-		        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-		        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-		        <a class="social-btn social-btn-yt" href="#">Ютуб</a>
-		      </div>
-		      <div class="footer-copyright">
-		      	<p>Website</p>
-		      	<a href="https://htmlacademy.ru">
-              <img src="img/htmlacademy.png" width="#" height="#" alt="Htmlacademy">
-            </a>
-		      </div>
-		      </footer>
+
 	      </div>
 	    </div>
 	  </div>
-	</main>
+  </main>
+  <footer class="main-footer">
+    <div class="hashtag">
+      <p>#Visitsedona</p>
+    </div>
+    <div class="footer-social">
+      <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+      <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+      <a class="social-btn social-btn-yt" href="#">Ютуб</a>
+    </div>
+    <div class="footer-copyright">
+      <p>Website by
+        <a href="https://htmlacademy.ru">
+         <img src="img/htmlacademy.png" width="#" height="#" alt="Htmlacademy">
+        </a>
+      </p>
+    </div>
+  </footer>
   </body>
 </html>

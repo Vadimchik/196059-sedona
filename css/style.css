@@ -1,21 +1,219 @@
 body {
-	font-size: 14px; 
+  width: 1200px;
+	font-size: 14px;
 	line-height: 26px;
 	color: #333333;
 	font-weight: normal;
-	font-family: PT Sans;	
+	font-family: PT Sans;
 }
 
 h2 {
-	font-size: 21px; 
-	line-height:26px;
+	font-size: 21px;
+	line-height: 26px;
 	color: #000000;
 	font-weight: bold;
 }
 
 h3 {
-	font-size: 21px; 
-	line-height:21px;
+	font-size: 21px;
+	line-height: 21px;
 	color: #000000;
 	font-weight: bold;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.main-header {
+  margin: 0 auto;
+  padding: 0 73px;
+}
+
+.main-navigation {
+  width: 1056px;
+
+}
+
+.main-navigation ul {
+
+}
+
+.main-navigation li {
+  display: inline-block;
+}
+
+.pucture {
+  min-height: 508px;
+}
+
+.slogan {
+  width: 576px;
+  margin: 0 312px;
+  padding-top: 60px;
+  padding-bottom: 55px;
+}
+
+.index-content-text {
+  float: left;
+  width: 290px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 58px;
+  padding-bottom: 33px;
+  background-color: #81b3d2;
+}
+
+.index-content-pick {
+  float: left;
+
+}
+
+.features-image {
+  float: left;
+  width: 400px;
+  padding-top: 60px;
+  padding-bottom: 86px;
+}
+
+.features-name {
+  float: left;
+  width: 400px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: #eeeeee;
+
+}
+
+.question {
+  padding-top: 58px;
+  padding-bottom: 52px;
+}
+
+.question-title {
+  width: 576px;
+  margin: 0 312px;
+}
+
+.search-hotel-title {
+  width: 568px;
+  margin: 0 312px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  background-color: #766357;
+}
+
+.form {
+  width: 568px;
+  margin: 0 312px;
+}
+
+.map {
+  min-height: 593px;
+}
+
+.main-footer {
+  padding-left: 73px;
+  padding-right: 73px;
+}
+
+.hashtag {
+  display: inline-block;
+  width: 240px;
+  margin-left: 73px;
+  margin-right: 88px;
+}
+
+.footer-social {
+  display: inline-block;
+  width: 400;
+  margin-right: 88px;
+}
+
+.footer-copyright {
+  display: inline-block;
+  width: 241px;
+}
+
+/*Внутренняя*/
+.filter input {
+  display: block;
+
+}
+.infrastructure {
+  float: left;
+  width: 241px;
+
+}
+
+.type-house {
+  float: left;
+  width: 288px;
+
+}
+
+.price {
+  float: right;
+  width: 328px;
+
+}
+
+.find {
+  width: 1056px;
+  margin: 0 73px;
+  padding: 30px 0;
+}
+
+.find h2 {
+  display: inline-block;
+}
+
+.find p {
+  display: inline-block;
+}
+.hotel {
+  padding: 31px 73px;
+}
+
+.hotel-image {
+  float: left;
+  width: 135px;
+  margin-right: 30px;
+}
+
+.hotel-info {
+  float: left;
+}
+
+.hotel-title h2 {
+  margin: 0;
+}
+
+.hotel-type {
+  float: left;
+  margin-right: 6px;
+}
+
+.hotel-type p {
+  margin: 0;
+}
+
+.cost {
+  float: left;
+}
+
+.cost p {
+  margin: 0;
+}
+
+.rating {
+  float: right;
+  width: 241px;
+  border: 1px solid black;
 }
