@@ -33,6 +33,7 @@ h3 {
 }
 
 .main-header {
+  position: relative;
   margin: 0 auto;
   padding: 0 73px;
 }
@@ -52,6 +53,7 @@ h3 {
 
 .main-navigation li {
   display: inline-block;
+  vertical-align: middle;
   padding: 15px 0px;
   font-size: 14px;
   line-height: 26px;
@@ -85,7 +87,7 @@ h3 {
 
 .index-logo {
   position: absolute;
-  left: 600px;
+  left: 530px;
   top: 0;
 }
 
@@ -101,27 +103,45 @@ h3 {
   text-align: center;
 }
 
+.slogan p{
+  font-weight: normal;
+}
+
 .index-content-text {
   float: left;
   width: 290px;
   padding-left: 55px;
   padding-right: 55px;
-  padding-top: 58px;
-  padding-bottom: 33px;
+  padding-top: 55px;
+  padding-bottom: 34px;
   background-color: #81b3d2;
   color: white;
   text-align: center;
 }
 
+.index-content-text h2 {
+  color: white;
+}
+
+.index-content-text p {
+  font-weight: normal;
+}
+
 .index-content-pick {
   float: left;
+  line-height: 0;
 }
 
 .features-image {
   float: left;
   width: 400px;
   padding-top: 60px;
-  padding-bottom: 86px;
+  padding-bottom: 85px;
+  text-align: center;
+}
+
+.features-image p {
+ font-weight: normal;
 }
 
 .features-name {
@@ -132,6 +152,10 @@ h3 {
   background: #eeeeee;
   text-align: center;
 
+}
+
+.features-name p{
+  font-weight: normal;
 }
 
 .question {
@@ -145,11 +169,15 @@ h3 {
   text-align: center;
 }
 
+.question-title p{
+  font-weight: normal;
+}
+
 .search-hotel-title {
   width: 568px;
   margin: 0 312px;
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #766357;
   color: white;
   text-align: center;
@@ -167,39 +195,99 @@ h3 {
 .main-footer {
   padding-left: 73px;
   padding-right: 73px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .hashtag {
   display: inline-block;
+  vertical-align: middle;
   width: 240px;
   margin-left: 73px;
   margin-right: 88px;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .footer-social {
   display: inline-block;
+  vertical-align: middle;
   width: 400;
   margin-right: 88px;
 }
 
 .social-btn {
   display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
   width: 46px;
   height: 48px;
   margin: 6px 0px;
   background-color: #81b3d2;
+  position: relative;
+
+}
+
+.socal-btn:hover {
+  background-color: #669ec0;
+}
+
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.social-btn-tw::before {
+  width: 17px;
+  height: 15px;
+  background-position: -5px -221px;
+}
+
+.social-btn-fb::before {
+  width: 10px;
+  height: 19px;
+  background-position: -5px -77px;
+}
+
+.social-btn-yt::before {
+  width: 20px;
+  height: 16px;
+  background-position: -5px -246px;
 }
 
 .footer-copyright {
   display: inline-block;
+  vertical-align: middle;
   width: 241px;
+}
+.footer-copyright a:hover {
+  background: url(../img/htmlacademy_1.png);
 }
 
 /*Внутренняя*/
+
+.filter {
+  background-color: #6f7075;
+  background-image: url("../img/filter.jpg");
+}
+
+.filter h2 {
+  color: white;
+}
 .filter input {
   display: block;
-
 }
+
+.filter label {
+  color: white;
+  font-weight: normal;
+}
+
 .infrastructure {
   float: left;
   width: 241px;
@@ -226,13 +314,27 @@ h3 {
 
 .find h2 {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .find p {
   display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px;
 }
+
+.find a {
+  line-height: 18px;
+  font-size: 12px;
+  margin-right: 30px;
+}
+
 .hotel {
   padding: 31px 73px;
+}
+
+.hotel p {
+  font-weight: normal;
 }
 
 .hotel-image {
@@ -245,8 +347,19 @@ h3 {
   float: left;
 }
 
-.hotel-title h2 {
-  margin: 0;
+.hotel-title a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-title a:hover {
+  color: #81b3d2;
+}
+
+.hotel-title a:active {
+  color:;
 }
 
 .hotel-type {
@@ -256,7 +369,27 @@ h3 {
 
 .hotel-type p {
   margin: 0;
+  margin-bottom: 10px;
+
 }
+
+.btn-read {
+  padding-top: 3px;
+  padding-bottom:  3px;
+  padding-left: 17px;
+  padding-right: 19px;
+  background-color: #81b3d2;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-read:hover {
+  background-color: #669ec0;
+}
+
+.btn-read:active {
+  background-color: #5496bd;
+ }
 
 .cost {
   float: left;
@@ -264,10 +397,144 @@ h3 {
 
 .cost p {
   margin: 0;
+  margin-bottom: 10px;
+}
+
+.btn-book {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 17px;
+  padding-right: 19px;
+  background-color: #766357;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-book:hover {
+  background-color: #604e43;
+}
+
+.btn-book:active {
+  background-color: #503e33;
 }
 
 .rating {
   float: right;
-  width: 241px;
-  border: 1px solid black;
+  position: relative;
+}
+
+.rating p {
+  text-align: right;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 16px;
+  padding-right: 14px;
+  background-color: #f2f2f2;
+}
+
+.star {
+  position: relative;
+}
+
+.star::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.star-four::before {
+  width: 89px;
+  height: 17px;
+  background-position: -5px -140px;
+}
+
+.star-two::before {
+  width: 42px;
+  height: 17px;
+  background-position: -5px -194px;
+}
+
+.star-three::before {
+  width: 65px;
+  height: 17px;
+  background-position: -5px -167px;
+}
+
+
+/*sprite*/
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-ico-arrow {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -5px;
+}
+
+.sprite-ico-arrow-blue {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -25px;
+}
+
+.sprite-ico-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -5px -45px;
+}
+
+.sprite-ico-fb {
+    width: 10px;
+    height: 19px;
+    background-position: -5px -77px;
+}
+
+.sprite-ico-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -5px -106px;
+}
+
+.sprite-ico-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -5px -119px;
+}
+
+.sprite-ico-star-four {
+    width: 89px;
+    height: 17px;
+    background-position: -5px -140px;
+}
+
+.sprite-ico-star-three {
+    width: 65px;
+    height: 17px;
+    background-position: -5px -167px;
+}
+
+.sprite-ico-star-two {
+    width: 42px;
+    height: 17px;
+    background-position: -5px -194px;
+}
+
+.sprite-ico-tw {
+    width: 17px;
+    height: 15px;
+    background-position: -5px -221px;
+}
+
+.sprite-ico-yt {
+    width: 20px;
+    height: 16px;
+    background-position: -5px -246px;
 }
