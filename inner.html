@@ -52,12 +52,23 @@
             <input type="checkbox" name="apartments" id="apartments-field" checked>
             <label for="apartments-field">Апартаменты</label>
           </div>
-          <div class="price">
-            <h2>Стоимость в сутки(Р):</h2>
-
-            <input type="range" min="0" max="3000">
-            <input type="submit" name="show" value="Показать">
-
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки(р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar">
+                </div>
+              </div>
+              <div class="range-toggle range-toggle-min">
+              </div>
+              <div class="range-toggle range-toggle-max">
+              </div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
           </div>
         </form>
       </div>
@@ -68,8 +79,8 @@
           <a href="#">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По рейтингу</a>
-          <a href="#">1</a>
-          <a href="#">2</a>
+          <a href="#" class="arrow arrow-grey"></a>
+          <a href="#" class="arrow arrow-blue"></a>
         </div>
         <div class="hotel clearfix">
           <div class="hotel-image">
@@ -133,7 +144,7 @@
             </div>
           </div>
           <div class="rating">
-            <span class="star star-three">
+            <span class="star star-three"></span>
             <p>Рейтинг: 8,9</p>
           </div>
         </div>
@@ -149,11 +160,8 @@
         <a class="social-btn social-btn-yt" href="#">Ютуб</a>
       </div>
       <div class="footer-copyright">
-        <p>Website by
-          <a href="https://htmlacademy.ru">
-            <img src="img/htmlacademy.png" width="#" height="#" alt="Htmlacademy">
-          </a>
-        </p>
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru"></a>
       </div>
     </footer>
   </body>
