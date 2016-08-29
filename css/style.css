@@ -202,9 +202,7 @@ h3 {
 .hashtag {
   display: inline-block;
   vertical-align: middle;
-  width: 240px;
   margin-left: 73px;
-  margin-right: 88px;
   font-size: 21px;
   line-height: 26px;
 }
@@ -212,28 +210,32 @@ h3 {
 .footer-social {
   display: inline-block;
   vertical-align: middle;
-  width: 400;
-  margin-right: 88px;
+  width: 400px;
+  margin-left: 88px;
 }
 
 .social-btn {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   font-size: 0;
   width: 46px;
   height: 48px;
-  margin: 6px 0px;
   background-color: #81b3d2;
-  position: relative;
-
 }
 
 .socal-btn:hover {
+  background-color: #669ec0;
+}
 
+.social-btn:active {
+  background-color: rgba(84,150,189,0.7);
 }
 
 .social-btn::before {
   content: "";
+  display: inline-block;
+  vertical-align: middle;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -263,18 +265,26 @@ h3 {
 .footer-copyright {
   display: inline-block;
   vertical-align: middle;
-  width: 241px;
+  width: 240px;
+  margin-left: 88px;
+  text-align: center;
 }
 
 .footer-copyright a {
   display: inline-block;
   vertical-align: middle;
+  width: 115px;
+  height: 40px;
   background-image: url("../img/htmlacademy.png");
   background-size: 115px 40px;
 }
 
 .footer-copyright a:hover {
   background-image: url(../img/htmlacademy_1.png);
+}
+
+.footer-copyright a:active {
+  background-image: url(../img/htmlacademy_2.png);
 }
 
 /*Внутренняя*/
@@ -452,21 +462,33 @@ h3 {
 .find a {
   line-height: 18px;
   font-size: 12px;
+  font-weight: normal;
   margin-left: 30px;
   text-decoration: none;
   color: #81b3d2;
 }
 
-/*.arrow {
-  position: relative;
+.sort {
+  font-weight: normal;
+  border-bottom: 1px dotted #81b3d2;
+  color: rgba(0,0,0,0.7);
+}
+
+.sort:hover {
+  color: #81b3d2;
+}
+
+.sort:active {
+  color: #000000;
+}
+
+.arrow {
+  float: right;
 }
 
 .arrow:before {
   content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: inline-block;
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
 }
@@ -481,11 +503,11 @@ h3 {
     width: 11px;
     height: 10px;
     background-position: -5px -25px;
-} */
+}
 
 .hotel {
   padding: 31px 73px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel p {
@@ -515,7 +537,7 @@ h3 {
 }
 
 .hotel-title a:active {
-  color:;
+  color: rgba(0,0,0,0.3);
 }
 
 .hotel-type {
@@ -545,7 +567,7 @@ h3 {
 
 .btn-read:active {
   background-color: #5496bd;
-  color: rgba(255,255,255,0.70);
+  color: rgba(255,255,255,0.7);
  }
 
 .cost {
@@ -596,24 +618,12 @@ h3 {
 }
 
 .star {
-  position: relative;
-  margin-right: 43px;
-}
-
-.star-four,
-.star-three,
-.star-two {
-  position: absolute;
-  top: 10px;
-  right: 0px;
+  float: right;
 }
 
 .star::before {
   content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: inline-block;
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
 }
