@@ -69,10 +69,19 @@ h3 {
 }
 
 .main-navigation a:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.active a {
   color: #766357;
 }
-.main-navigation a:visited {
-  color:
+
+.active a:hover {
+  color: #604e43;
+}
+
+.active a:active {
+  color: rgba(0,0,0,0.3);
 }
 
 .menu-left {
@@ -144,6 +153,21 @@ h3 {
  font-weight: normal;
 }
 
+.short-text-one {
+  padding-left: 73px;
+  padding-right: 75px;
+}
+
+.short-text-two {
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.short-text-three {
+  padding-left: 63px;
+  padding-right: 63px;
+}
+
 .features-name {
   float: left;
   width: 400px;
@@ -212,6 +236,7 @@ h3 {
   vertical-align: middle;
   width: 400px;
   margin-left: 88px;
+  text-align: center;
 }
 
 .social-btn {
@@ -224,12 +249,12 @@ h3 {
   background-color: #81b3d2;
 }
 
-.socal-btn:hover {
+.social-btn:hover {
   background-color: #669ec0;
 }
 
 .social-btn:active {
-  background-color: rgba(84,150,189,0.7);
+  background-color: #5496bd;
 }
 
 .social-btn::before {
@@ -247,19 +272,19 @@ h3 {
 .social-btn-tw::before {
   width: 17px;
   height: 15px;
-  background-position: -5px -221px;
+  background-position: -228px -47px;
 }
 
 .social-btn-fb::before {
   width: 10px;
   height: 19px;
-  background-position: -5px -77px;
+  background-position: -10px -82px;
 }
 
 .social-btn-yt::before {
   width: 20px;
   height: 16px;
-  background-position: -5px -246px;
+  background-position: -163px -117px;
 }
 
 .footer-copyright {
@@ -465,25 +490,29 @@ h3 {
   font-weight: normal;
   margin-left: 30px;
   text-decoration: none;
-  color: #81b3d2;
-}
-
-.sort {
   font-weight: normal;
   border-bottom: 1px dotted #81b3d2;
-  color: rgba(0,0,0,0.7);
+  color: rgba(0,0,0,0.3);
 }
 
-.sort:hover {
+.find a:hover {
   color: #81b3d2;
 }
 
-.sort:active {
+.find a:active {
   color: #000000;
+  border-bottom: none;
 }
 
-.arrow {
+a.sort-active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+a.arrow {
   float: right;
+  margin-top: 30px;
+  border-bottom: none;
 }
 
 .arrow:before {
@@ -493,16 +522,40 @@ h3 {
   background-repeat: no-repeat;
 }
 
-.arrow-grey:before {
+.arrow-up:before {
     width: 11px;
     height: 10px;
-    background-position: -5px -5px;
+    background-position: -103px -10px;
 }
 
-.arrow-blue:before {
+.arrow-under:before {
     width: 11px;
     height: 10px;
-    background-position: -5px -25px;
+    background-position: -10px -10px;
+}
+
+.arrow-up:hover {
+  width: 11px;
+  height: 10px;
+  background-position: -10px -40px;
+}
+
+.arrow-under:hover {
+  width: 11px;
+  height: 10px;
+  background-position: -72px -10px;
+}
+
+.arrow-up:active {
+  width: 11px;
+  height: 10px;
+  background-position: -134px -10px;
+}
+
+.arrow-under:active {
+  width: 11px;
+  height: 10px;
+  background-position: -41px -10px;
 }
 
 .hotel {
@@ -631,25 +684,25 @@ h3 {
 .star-four::before {
   width: 89px;
   height: 17px;
-  background-position: -5px -140px;
+  background-position: -10px -136px;
 }
 
 .star-two::before {
   width: 42px;
   height: 17px;
-  background-position: -5px -194px;
+  background-position: -166px -47px;
 }
 
 .star-three::before {
   width: 65px;
   height: 17px;
-  background-position: -5px -167px;
+  background-position: -165px -10px;;
 }
 
 
 /*sprite*/
 
-.sprite {
+/*.sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
@@ -658,13 +711,13 @@ h3 {
 .sprite-ico-arrow-grey {
     width: 11px;
     height: 10px;
-    background-position: -5px -5px;
+    background-position: -5px -25px;
 }
 
 .sprite-ico-arrow-blue {
     width: 11px;
     height: 10px;
-    background-position: -5px -25px;
+    background-position: -5px -5px;
 }
 
 .sprite-ico-calendar {
@@ -719,4 +772,155 @@ h3 {
     width: 20px;
     height: 16px;
     background-position: -5px -246px;
+}*/
+
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
 }
+
+.sprite-ico-arrow-under {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -10px;
+}
+
+.sprite-ico-arrow-under-down {
+    width: 11px;
+    height: 10px;
+    background-position: -41px -10px;
+}
+
+.sprite-ico-arrow-under-hvr {
+    width: 11px;
+    height: 10px;
+    background-position: -72px -10px;
+}
+
+.sprite-ico-arrow-up {
+    width: 11px;
+    height: 10px;
+    background-position: -103px -10px;
+}
+
+.sprite-ico-arrow-up-down {
+    width: 11px;
+    height: 10px;
+    background-position: -134px -10px;
+}
+
+.sprite-ico-arrow-up-hvr {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -40px;
+}
+
+.sprite-ico-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -41px -40px;
+}
+
+.sprite-ico-calendar-down {
+    width: 21px;
+    height: 22px;
+    background-position: -82px -40px;
+}
+
+.sprite-ico-calendar-hvr {
+    width: 21px;
+    height: 22px;
+    background-position: -123px -40px;
+}
+
+.sprite-ico-fb {
+    width: 10px;
+    height: 19px;
+    background-position: -10px -82px;
+}
+
+.sprite-ico-fb-down {
+    width: 10px;
+    height: 19px;
+    background-position: -40px -82px;
+}
+
+.sprite-ico-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -70px -82px;
+}
+
+.sprite-ico-minus-down {
+    width: 12px;
+    height: 3px;
+    background-position: -102px -82px;
+}
+
+.sprite-ico-minus-hvr {
+    width: 12px;
+    height: 3px;
+    background-position: -134px -82px;
+}
+
+.sprite-ico-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -70px -105px;
+}
+
+.sprite-ico-plus-down {
+    width: 11px;
+    height: 11px;
+    background-position: -101px -105px;
+}
+
+.sprite-ico-plus-hvr {
+    width: 11px;
+    height: 11px;
+    background-position: -132px -105px;
+}
+
+.sprite-ico-star-four {
+    width: 89px;
+    height: 17px;
+    background-position: -10px -136px;
+}
+
+.sprite-ico-star-three {
+    width: 65px;
+    height: 17px;
+    background-position: -165px -10px;
+}
+
+.sprite-ico-star-two {
+    width: 42px;
+    height: 17px;
+    background-position: -166px -47px;
+}
+
+.sprite-ico-tw {
+    width: 17px;
+    height: 15px;
+    background-position: -228px -47px;
+}
+
+.sprite-ico-tw-down {
+    width: 17px;
+    height: 15px;
+    background-position: -228px -82px;
+}
+
+.sprite-ico-yt {
+    width: 20px;
+    height: 16px;
+    background-position: -163px -117px;
+}
+
+.sprite-ico-yt-down {
+    width: 20px;
+    height: 16px;
+    background-position: -203px -117px;
+}
+
