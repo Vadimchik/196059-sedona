@@ -4,7 +4,7 @@ body {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
   color: #333333;
   text-transform: uppercase;
   box-shadow: 0 0 20px 2px rgba(0, 1, 1, 0.2);
@@ -49,7 +49,6 @@ h3 {
 .main-navigation ul {
   margin: 0;
   padding: 0;
-
   list-style: none;
   font-size: 0;
 }
@@ -105,6 +104,7 @@ h3 {
 }
 
 .picture {
+  background-color: #81aac9;
   position: relative;
   min-height: 508px;
 }
@@ -135,9 +135,9 @@ h3 {
 
 .index-content-text {
   float: left;
-  width: 290px;
-  padding-left: 55px;
-  padding-right: 55px;
+  width: 304px;
+  padding-left: 48px;
+  padding-right: 48px;
   padding-bottom: 26px;
   background-color: #81b3d2;
   color: #ffffff;
@@ -164,7 +164,6 @@ h3 {
   padding-left: 60px;
   padding-right: 60px;
   text-align: center;
-  border: 1px solid red;
 }
 
 .index-content-pick {
@@ -172,6 +171,7 @@ h3 {
   width: 800px;
   min-height: 256px;
   line-height: 0;
+  background-color: #e3b89e;
 }
 
 .features-image {
@@ -263,8 +263,6 @@ h3 {
 
 .question-title p{
   font-weight: normal;
-  margin-right: 70px;
-  margin-left: 70px;
   text-align: center;
 }
 
@@ -347,7 +345,7 @@ h3 {
 
 .adults label {
   width: 96px;
-  margin-right: 38px;
+  margin-right: 37px;
 }
 
 .child label {
@@ -373,6 +371,10 @@ h3 {
   height: 36px;
   background-color: #f2f2f2;
   border: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: inherit;
+  text-align: center;
 }
 
 .btn-minus {
@@ -474,6 +476,7 @@ h3 {
 .map {
   min-height: 593px;
   background: url("../img/map.jpg") no-repeat;
+  background-color: #cbdda9;
 }
 
 .main-footer {
@@ -618,7 +621,8 @@ h3 {
   color: #ffffff;
 }
 .filter input {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .filter label {
@@ -860,12 +864,6 @@ a.arrow {
   border-bottom: none;
 }
 
-.arrow-active {
-  width: 11px;
-  height: 10px;
-  background-position: -134px -10px;
-}
-
 .arrow::before {
   content: "";
   display: inline-block;
@@ -909,6 +907,12 @@ a.arrow {
   background-position: -41px -10px;
 }
 
+.arrow-active::before {
+  width: 11px;
+  height: 10px;
+  background-position: -41px -10px;
+}
+
 .hotel {
   padding: 31px 73px;
   border-bottom: 1px solid #e5e5e5;
@@ -923,6 +927,18 @@ a.arrow {
   width: 135px;
   height: 90px;
   margin-right: 30px;
+}
+
+.amara {
+  background-color: #622735;
+}
+
+.desert {
+  background-color: #613736;
+}
+
+.villas {
+  background-color: #819049;
 }
 
 .hotel-info {
