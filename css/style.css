@@ -279,16 +279,24 @@ h3 {
 }
 
 .modal-content {
+  position: absolute;
+  z-index: 1;
+  top: 290;
+  left: 312;
   width: 568px;
   margin: 0 312px;
+  background-color: #ffffff
 }
 
 .check {
   position: relative;
-  margin-top: 55px;
   margin-bottom: 30px;
   padding-left: 55px;
   padding-right: 55px;
+}
+
+.check-in {
+  margin-top: 55px;
 }
 
 .check label {
@@ -474,6 +482,7 @@ h3 {
 }
 
 .map {
+  position: relative;
   min-height: 593px;
   background: url("../img/map.jpg") no-repeat;
   background-color: #cbdda9;
@@ -481,8 +490,8 @@ h3 {
 
 .main-footer {
   position: absolute;
-  bottom: 0;
   background-color: rgba(255,255,255,0.7);
+  bottom: 0;
   left: 0;
   right: 0;
   padding-left: 73px;
@@ -504,6 +513,10 @@ h3 {
   margin-left: 73px;
   font-size: 21px;
   line-height: 26px;
+}
+
+.hashtag p {
+  margin: 0;
 }
 
 .footer-social {
@@ -586,6 +599,11 @@ h3 {
   width: 240px;
   margin-left: 88px;
   text-align: center;
+}
+
+.footer-copyright p {
+  font-weight: normal;
+  margin: 0;
 }
 
 .footer-copyright a {
