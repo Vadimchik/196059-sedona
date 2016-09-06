@@ -41,7 +41,7 @@
   	      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
   	    <div class="index-content clearfix">
-  	      <div class="index-content-text">
+  	      <div class="index-content-text text-left">
   	        <h2>Настоящий городок</h2>
   	        <p>-№1-</p>
   	        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -71,24 +71,24 @@
   	      <div class="index-content-pick">
   	        <img src="img/devil's bridge.jpg" width="800" height="256" alt="Мост дъявола">
   	      </div>
-  	      <div class="index-content-text">
+  	      <div class="index-content-text text-right">
   	        <h2>Там есть мост дъявола</h2>
   	        <p>-№2-</p>
-  	        <p class="short-text-four">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+  	        <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
           </div>
   	    </div>
   	    <div class="features-item clearfix">
-  	      <div class="features-name">
-  	        <h3>Небольшая площадь</h3>
+  	      <div class="features-name area">
+            <h3>Небольшая площадь</h3>
   	        <p>-№3-</p>
   	        <p>Все достопримечательности находятся очень близко</p>
   	      </div>
-  	      <div class="features-name">
+  	      <div class="features-name road">
   	        <h3>Красивая дорога</h3>
   	        <p>-№4-</p>
   	        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
   	      </div>
-  	      <div class="features-name">
+  	      <div class="features-name tourists">
   	        <h3>Мало туристов</h3>
   	        <p>-№5-</p>
   	        <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -108,26 +108,30 @@
   	      <form action="#" method="get">
             <div class="check clearfix">
     	        <label for="arrival">Дата заезда:</label>
-    	        <input type="text" name="data-arrival" id="arrival" placeholder="24 апреля 2016">
+    	        <input type="text" name="data-arrival" id="arrival" value="24 апреля 2016">
               <div class="btn-calendar"></div>
             </div>
             <div class="check clearfix">
     	        <label for="departure">Дата выезда:</label>
-    	        <input type="text" name="data-departure" id="departure" placeholder="4 июля 2016">
+    	        <input type="text" name="data-departure" id="departure" value="4 июля 2016">
               <div class="btn-calendar"></div>
             </div>
             <div class="count-people clearfix">
               <div class="adults">
     	          <label for="adults-field">Взрослые:</label>
-                <button class="btn-minus">-</button>
-      	      	<input type="text" name="adults" id="adults-field" value="2">
-                <button class="btn-plus">+</button>
+                <div class="pick">
+                  <button class="btn-minus">-</button>
+      	      	  <input type="text" name="adults" id="adults-field" value="2">
+                  <button class="btn-plus">+</button>
+                </div>
               </div>
               <div class="child">
     	          <label for="child-field">Дети:</label>
-                <button class="btn-minus">-</button>
-                <input type="text" name="child" id="child-field" value="0">
-                <button class="btn-plus">+</button>
+                <div class="pick">
+                  <button class="btn-minus">-</button>
+                  <input type="text" name="child" id="child-field" value="0">
+                  <button class="btn-plus">+</button>
+                </div>
               </div>
             </div>
 	          <button class="btn-get" type="submit">Найти</button>
